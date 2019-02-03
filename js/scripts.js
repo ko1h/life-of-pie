@@ -1,3 +1,24 @@
+//business logic
+function Pizza(size, protein, topping) {
+  this.size = size,
+  this.protein = protein,
+  this.topping = topping,
+}
+
+function add(size, protein, topping) {
+  return size + protein + topping;
+}
+
+Pizza.prototype.toppingsPrice = function() {
+  this.toppingPrice += this.topping.length;
+  this.proteinPrice += this.protein.length;
+}
+
+Pizza.prototype.cost = function() {
+  this.startPrice += add(this.size, this.proteinPrice, this.toppingPrice);
+}
+
+//user Intergface Logic
 $(document).ready(function() {
   $("#pizzaOrder").submit(function(event) {
     event.preventDefault();
