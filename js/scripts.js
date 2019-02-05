@@ -3,7 +3,7 @@ function Pizza(size, protein, topping) {
   this.size = size,
   this.protein = protein,
   this.topping = topping
-  this.startPrice = 5,
+  this.startPrice = 0,
   this.toppingPrice = 0,
   this.proteinPrice = 2
 }
