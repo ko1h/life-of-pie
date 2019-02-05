@@ -20,7 +20,7 @@
 
 ## Setup/Installation Requirements
 
-* _Clone Repository_
+* _Clone Repository https://github.com/ko1h/life-of-pie.git_
 * _Github link_
 * _Open folder_
 * _Open index.html_
@@ -43,4 +43,4 @@ _Github, Git, HTML, Javascript, CSS, Bootstrap, and jQuery_
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2018 **_KH_** MIT license.
+Copyright (c) 2019 **_KH_** MIT license.
