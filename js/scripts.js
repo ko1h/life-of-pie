@@ -22,14 +22,9 @@ Pizza.prototype.cost = function() {
 }
 
 Pizza.prototype.outputPizzaInfo = function() {
-  $(".totalCost").text("Your total cost: " + "$" + this.startPrice);
-  this.topping.forEach(function(topping) {
-    $("#toppingsList").append("<li>" + topping + "</li>");
-  })
-  this.protein.forEach(function(protein) {
-    $("#proteinList").append("<li>" + protein + "</li>");
-  })
+  $(".result").text("Your total cost: " + "$" + this.startPrice);
 }
+
 //user Intergface Logic
 $(document).ready(function() {
   $("#pizzaOrder").submit(function(event) {
@@ -49,6 +44,10 @@ $(document).ready(function() {
   })
 
   var pizza = new Pizza(pizzaSize, pizzaProtein, pizzaToppings);
+
+  pizza.toppingsPrice();
+  pizza.cost();
+  pizza.outputPizzaInfo();
 
   });
 });
